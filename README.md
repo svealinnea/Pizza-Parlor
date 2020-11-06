@@ -1,11 +1,11 @@
-# _Application Name_
+# _Pizza Parlor_
 
-### _Brief description of application, Date of current version_
+### _Pizza Ordering System, November 6, 2020_
 
 ### By 
-
+Svea Wade
 ### Description
-
+This is a Pizza ordering system that allows you to order pizzas that you would like. 
 
 ## Setup/Installation Requirements
 
@@ -22,22 +22,27 @@ Here are some instructions on how to do so:
 
 ## Specs
 Test | Input | Output | 
+It should correctly return the type of Pizza chosen with toppings and size. | meat = pepperoni, cheese = mozzarella, topping = olives, size = large | pepperoni, mozzarella, olives, large |
+
+
+
 
 ## Known Bugs
-
+There are no known bugs at this moment
 
 
 ## Support and contact details
-
+Please reach out to me if you have any questions: Svea Wade <svealinneawade@gmail.com>
 
 
 ## Technologies Used
 
-*
-*
-*
-*
-*
+* Git
+* Bootstrap
+* jQuery
+* JavaScript
+* HTML
+* CSS
 
 ## Legal
 
