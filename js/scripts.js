@@ -8,14 +8,6 @@
 //Expect: Pizza(Pepperoni, Large, Olives).toEqual($21.50)
 
 
-//Business Logic for Pizza Parlor
-
-function PizzaParlor() {
-  this.pizza = [];
-}
-PizzaParlor.prototype.addPizza = function(pizza) {
-  this.pizzas.push(pizza);
-}
 
 //Business Logic for Pizzas
 
@@ -24,5 +16,16 @@ function Pizza(meat, cheese, toppings, size) {
   this.cheese = cheese;
   this. toppings = toppings;
   this.size = size;
+  this.price = 0;
 }
 
+function toppingChoices() { 
+  let choiceToppings = [];
+  for (let i = 0; i < $ ("input[name=toppings]").length; i++) {
+    if($("input[name=toppings]")[i].checked) {
+      choiceToppings.push($("input[name=toppings]")[i]);
+    }
+  }
+  return choiceToppings;
+}
+console.log(choiceToppings);
