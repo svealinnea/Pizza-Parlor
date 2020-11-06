@@ -4,6 +4,9 @@
 //Test: It should correctly return the type of Pizza chosen with toppings.
 //Expect: Pizza(meat, cheese, toppings, size).toEqual(Pizza with pepperoni, mozzarella, olives, large)
 
+//Test: It should correctly return the price of Pizza based on the toppings and size
+//Expect: Pizza(Pepperoni, Large, Olives).toEqual($21.50)
+
 
 //Business Logic for Pizza Parlor
 

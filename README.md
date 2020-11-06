@@ -23,7 +23,7 @@ Here are some instructions on how to do so:
 ## Specs
 Test | Input | Output | 
 It should correctly return the type of Pizza chosen with toppings and size. | meat = pepperoni, cheese = mozzarella, topping = olives, size = large | pepperoni, mozzarella, olives, large |
-
+It should correctly return the price of Pizza based on the toppings and size | 
 
 
 
