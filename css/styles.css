@@ -1,0 +1,16 @@
+.btn {
+  margin: 10px;
+  background-color: brown;
+  color: white;
+}
+h2 {
+  margin: 20px;
+  font-family: monospace;
+  font-weight: lighter;
+}
+body {
+  background-color: rgba(255, 192, 203, 0.399);
+}
+.details {
+  font-style: italic;
+}

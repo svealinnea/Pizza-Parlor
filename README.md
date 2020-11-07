@@ -29,7 +29,7 @@ It should correctly return the price of Pizza based on the toppings and size | P
 
 
 ## Known Bugs
-There are no known bugs at this moment
+The only bug I see is that the price does not seem to reflect the options and only spits out $23.
 
 
 ## Support and contact details
