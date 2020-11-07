@@ -4,6 +4,7 @@
 
 ### By 
 Svea Wade
+
 ### Description
 This is a Pizza ordering system that allows you to order pizzas that you would like. 
 
@@ -16,7 +17,7 @@ Here are some instructions on how to do so:
 1. You will need an internet browser & a code editor installed on your computer. Examples include: VSCode.
 2. When you open the link above you will need to click on the "clone or download button"
 3. After it downloads you will need to open the document labeled “index.html "
-4. You will then need to clone it on your computer git Clone 
+4. You will then need to clone it on your computer git Clone https://github.com/svealinnea/Pizza-Parlor.git
 5. After you clone it you will need to open it in your preferred code editor
 6. Last step is to open it into a browser! I recommend using Chrome.
 
@@ -29,7 +30,7 @@ It should correctly return the price of Pizza based on the toppings and size | P
 
 
 ## Known Bugs
-The only bug I see is that the price does not seem to reflect the options and only spits out $23.
+The only bug I see is that the price does not seem to reflect the options and only spits out $23. 
 
 
 ## Support and contact details
