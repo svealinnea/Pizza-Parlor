@@ -19,31 +19,35 @@ function Pizza(meat, cheese, toppings, size) {
 
 Pizza.prototype.totalPrice = function() {
   this.price = 0;
-  console.log(this.size)
-  if (this.size === "Large" || "Medium") {
+  
+  if (this.size == "large") {
     this.price += 25;
-  } else if (this.size === "Small") {
+  } else if (this.size == "medium") {
+    this.price += 20;
+  } else if (this.size === "small") {
     this.price += 15;
   }
-  console.log(this.toppings)
-  if (this.toppings == "onion" || "tomato" || "bell pepper" || "mushroom" || "pineapple") {
-    this.price += .50
-  } else if (this.toppings == "roasted garlic" || "olives" || "pineapple") {
-    this.price += .75
-  }
-  console.log(this.meat)
-  if (this.meat == "pepperoni" || "chicken" || "sausage" || "bacon") {
+
+  this.toppings.forEach(val => {
+    if (['onion', 'tomato', 'bell pepper', 'mushroom'].indexOf(val) != -1) {
+      this.price += .50
+    } else if (['roasted garlic', 'olives', 'pineapple'].indexOf(val) != -1) {
+      this.price += .75
+    }
+  });
+ 
+  if (this.meat == "pepperoni" || this.meat == "chicken" || this.meat == "sausage" || this.meat == "bacon") {
     this.price += 1.00
-  } else if (this.meat ==="steak") {
+  } else if (this.meat == "steak") {
     this.price += 2.50
   }
-  console.log(this.cheese)
-  if (this.cheese == "cheddar" || "mozzarella" || "parmesan") {
+ 
+  if (this.cheese == "cheddar" || this.cheese == "mozzarella" || this.cheese == "parmesan") {
     this.price += 1.50
-  } else if (this.cheese === "gouda" || "goat cheese") {
+  } else if (this.cheese == "gouda" || this.cheese == "goat cheese") {
     this.price += 2
   }
-  console.log(this.price)
+ 
   return this.price
 }
 
@@ -52,17 +56,28 @@ Pizza.prototype.totalPrice = function() {
 $(document).ready(function(){
   $('form#choices').submit(function(event){
     event.preventDefault();
-    
+
+    let toppings = [];
+    $('input[name=toppings]:checked').each(function () {
+      toppings.push($(this).val());
+    });
+
     let size = $('#size').val();
     let meat = $('#meat').val();
-    let toppings = $('input[name=spinach]:checked').val();
     let cheese = $('#cheese').val();
+
+    console.log(size);
+    console.log(meat);
+    console.log(toppings);
+    console.log(cheese);
  
     let thePizza = new Pizza(meat, cheese, toppings, size)
 
+    yourPizza = Pizza();
     total = thePizza.totalPrice();
     console.log(thePizza)
-    //$('#total').text("$" + total)
     $('#total').text("$" + total)
+    document.getElementById("yourPizza").innerHTML = thePizza.meat;
+    // $("#yourPizza").text(thePizza)
   });
 });
