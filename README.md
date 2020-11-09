@@ -1,6 +1,6 @@
 # _Pizza Parlor_
 
-### _Pizza Ordering System, November 6, 2020_
+### _Pizza Ordering System, November 8, 2020_
 
 ### By 
 Svea Wade
@@ -25,12 +25,13 @@ Here are some instructions on how to do so:
 Test | Input | Output | 
 
 It should correctly return the type of Pizza chosen with toppings and size. | meat = pepperoni, cheese = mozzarella, topping = olives, size = large | pepperoni, mozzarella, olives, large |
-It should correctly return the price of Pizza based on the toppings and size | Pepperoni, Large, Olives | $21.50
+
+It should correctly return the price of Pizza based on the toppings and size | Pepperoni, Mozarella, Large, Olives | $28.25
 
 
 
 ## Known Bugs
-The only bug I see is that the price does not seem to reflect the options and only spits out $23. 
+No bugs at this time. 
 
 
 ## Support and contact details
