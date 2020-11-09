@@ -65,18 +65,11 @@ $(document).ready(function(){
     let size = $('#size').val();
     let meat = $('#meat').val();
     let cheese = $('#cheese').val();
-
-    console.log(size);
-    console.log(meat);
-    console.log(toppings);
-    console.log(cheese);
  
     let thePizza = new Pizza(meat, cheese, toppings, size)
 
     yourPizza = Pizza();
     total = thePizza.totalPrice();
-    console.log(thePizza)
     $('#total').text("$" + total)
-    // $("#yourPizza").text(thePizza)
   });
 });

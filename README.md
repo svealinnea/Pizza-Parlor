@@ -1,6 +1,6 @@
 # _Pizza Parlor_
 
-### _Pizza Ordering System, November 8, 2020_
+### _Pizza Ordering System, November 9, 2020_
 
 ### By 
 Svea Wade
@@ -31,7 +31,7 @@ It should correctly return the price of Pizza based on the toppings and size | P
 
 
 ## Known Bugs
-No bugs at this time. 
+No known bugs at this time. 
 
 
 ## Support and contact details
