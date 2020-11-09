@@ -77,7 +77,6 @@ $(document).ready(function(){
     total = thePizza.totalPrice();
     console.log(thePizza)
     $('#total').text("$" + total)
-    document.getElementById("yourPizza").innerHTML = thePizza.meat;
     // $("#yourPizza").text(thePizza)
   });
 });
